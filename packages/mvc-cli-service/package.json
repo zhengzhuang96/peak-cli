@@ -1,0 +1,41 @@
+{
+  "name": "mvc-cli-service",
+  "version": "1.0.15",
+  "description": "mvc-cli-service",
+  "bin": {
+    "mvc-cli-service": "bin/mvc-cli-service.js"
+  },
+  "author": "woai3c <411020382@qq.com>",
+  "homepage": "https://github.com/woai3c/cli-demo#readme",
+  "license": "MIT",
+  "main": "lib/cli-service.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woai3c/cli-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/woai3c/cli-demo/issues"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^4.2.1",
+    "webpackbar": "^4.0.0"
+  }
+}
