@@ -2,9 +2,10 @@
 const program = require('commander')
 const create = require('../lib/create')
 const add = require('../lib/add')
+const packageInfo = require('../package.json')
 
 program
-.version('0.0.3')
+.version(packageInfo.version)
 .command('create <name>')
 .description('创建新的项目')
 .action(name => { 
