@@ -10,7 +10,7 @@ npm i peak-cli -g
 ```
 ### 使用
 ```
-peak-cli create <projectName>
+peak create <projectName>
 ```
 
 ### Todo
