@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhengzhuang96/spark-ui.git"
+    "url": "git+https://github.com/zhengzhuang96/peak-cli.git"
   },
-  "homepage": "https://github.com/zhengzhuang96/spark-ui",
+  "homepage": "https://github.com/zhengzhuang96/peak-cli",
   "bugs": {
-    "url": "https://github.com/zhengzhuang96/spark-ui/issues"
+    "url": "https://github.com/zhengzhuang96/peak-cli/issues"
   },
   "dependencies": {
     "chalk": "^4.1.0",
