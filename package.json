@@ -2,21 +2,28 @@
   "name": "peak-cli",
   "version": "0.0.7",
   "description": "npm脚手架工具",
-  "author": "zhengzhuang <zheng960108@163.com>",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
-  "workspaces": [
-    "packages/mvc-*"
-  ],
-  "main": "bin/mvc.js",
   "directories": {
+    "bin": "bin",
     "lib": "lib",
-    "test": "__tests__"
+    "dist": "dist"
   },
   "bin": {
-    "peak": "bin/mvc.js"
+    "peak": "./dist/index.js"
   },
+  "keywords": [
+    "peak-cli",
+    "peak",
+    "脚手架"
+  ],
+  "author": {
+    "name": "zhengzhuang",
+    "email": "zheng960108@163.com"
+  },
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhengzhuang96/peak-cli.git"
@@ -25,31 +32,31 @@
   "bugs": {
     "url": "https://github.com/zhengzhuang96/peak-cli/issues"
   },
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "commander": "^7.0.0",
-    "deepmerge": "^4.2.2",
-    "ejs": "^3.1.6",
-    "execa": "^5.0.0",
-    "fs-extra": "^9.1.0",
-    "globby": "^11.0.2",
-    "inquirer": "^7.3.3",
-    "isbinaryfile": "^4.0.6",
-    "javascript-stringify": "^2.0.1",
-    "lodash.clonedeep": "^4.5.0",
-    "mvc-cli-plugin-babel": "^1.0.13",
-    "mvc-cli-plugin-linter": "^1.0.13",
-    "mvc-cli-plugin-router": "~1.0.13",
-    "mvc-cli-plugin-vuex": "^1.0.13",
-    "mvc-cli-service": "^1.0.15",
-    "node-fetch": "^2.6.1",
-    "read-pkg": "^2.0.0",
-    "readline": "^1.3.0",
-    "recast": "^0.20.4",
-    "resolve": "^1.20.0",
-    "vue-codemod": "0.0.5",
-    "vue-router": "^3.5.1",
-    "yaml-front-matter": "^4.1.1"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
-  "license": "MIT"
+  "dependencies": {
+    "@types/figlet": "^1.5.4",
+    "chalk": "4.1.2",
+    "commander": "^9.3.0",
+    "cross-spawn": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "execa": "5.1.1",
+    "figlet": "^1.5.2",
+    "fs-extra": "^9.1.0",
+    "inquirer": "^8.2.0",
+    "ora": "^5.4.1",
+    "readline": "^1.3.0",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^8.2.1",
+    "rollup": "^2.76.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.4"
+  }
 }
