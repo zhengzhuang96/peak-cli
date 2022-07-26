@@ -10,12 +10,11 @@ npm i peak-cli -g
 ```
 ### 使用
 ```
-peak create <projectName>
+peak create
 ```
 
+### 已经完成
+- taro微信小程序项目
+
 ### Todo
-- 完整的vue2.0项目工程化配置
-- 后期会加入vue3.0工程化配置
-- 以及react项目工程化配置
-- ......
-- 还会有更多
+- ...
