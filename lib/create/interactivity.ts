@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-15 16:09:24
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-07-25 17:22:43
+ * @LastEditTime: 2022-10-24 18:22:13
  * @Description: In User Settings Edit
  */
 import { existsSync } from "fs-extra";
@@ -60,11 +60,11 @@ const interactivity = async (): Promise<IInteractivity> => {
       message: '项目类型',
       default: 'vue',
       choices: [
-        // { name: 'react', value: 'react' },
         // { name: 'vue3', value: 'vue3' },
         // { name: 'vue2', value: 'vue2' },
         // { name: 'flutter', value: 'flutter' },
-        { name: 'taro', value: 'taro' },
+        { name: 'react - react admin', value: 'react-admin' },
+        { name: 'taro - 移动端跨平台', value: 'taro' },
       ]
     }
   ];

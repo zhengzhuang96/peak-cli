@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-14 18:09:28
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-07-25 10:54:52
+ * @LastEditTime: 2022-10-24 18:27:00
  * @Description: In User Settings Edit
  */
 import typescript from "typescript";
@@ -21,11 +21,11 @@ const globals = external.reduce((prev, current) => {
 }, {});
 
 export default {
-  input: "./bin/cli.ts",
+  input: "./lib/cli.ts",
   output: {
-    file: "./dist/index.js",
+    file: "./dist/cli.js",
     format: "cjs",
-    banner: "#!/usr/bin/env node",
+    // banner: "#!/usr/bin/env node",
     globals,
   },
   external,

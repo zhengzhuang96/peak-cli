@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-15 16:49:29
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-07-26 16:16:14
+ * @LastEditTime: 2022-10-24 18:23:00
  * @Description: In User Settings Edit
  */
 import { log } from "../utils/console";
@@ -30,6 +30,9 @@ const createProject = async (title: string, name: string): Promise<any> => {
     switch (title) {
       case 'taro':
         repo = `github:zhengzhuang96/taro-react#main`
+        break;
+      case 'react-admin':
+        repo = `git@github.com:zhengzhuang96/react-admin-project-template.git#master`
         break;
       default:
         break;
